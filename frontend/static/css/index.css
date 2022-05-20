@@ -1,4 +1,24 @@
-@import url("https://fonts.google.com/specimen/Nunito+Sans");
+/* @import url("https://fonts.google.com/specimen/Nunito+Sans"); */
+
+:root {
+    --clr-primary-200: #ffffff;
+    --clr-primary-400: #ee941f;
+    --clr-primary-600: #585858;
+
+    
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #757575;
+  
+    --ff-primary: "Roboto", sans-serif;
+    --ff-accent: "Playfair Display", serif;
+
+  }
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 
 *{
     margin: 0;
@@ -6,21 +26,55 @@
     box-sizing: border-box;
 };
 
-body{
-    width: 100%;
-    min-height: 100vh;
-    --bgColor: hsl(0,0%,98%);
-    --fontcolor: hsl(200, 15%, 8%);
-    font-family: "Nunito Sans" sans-serif;
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
-};
+header{
+    display: flex;
+    padding: 15px;
+    background-color: var(--clr-primary-400);
+}
 
-.container{
+h3{
+    color: var(--clr-primary-600);
+    font-size: .8rem;
+}
+
+p{
+    font-size: .8rem;
+    padding-left: 3px;
+}
+
+.top-container{
     width: 100%;
-    padding: 30px;
+    padding: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
-};
+}
+
+.data {
+    display: flex;
+    color: var(--clr-neutral-900);
+}
+
+.flag-list{
+    background: var(--clr-neutral-100);
+    padding:20px;
+}
+.flag{
+    background: red;
+    padding: 2px;
+}
+
+.flag-individual{
+    background: pink;
+    max-width: 150px;
+}
 
 .container:nth-child(1){
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
@@ -68,7 +122,7 @@ button{
 
 
 
-:root{
+/* :root{
     --background-light: hsl(0, 0%, 98%);
     --background-dark: hsl(207, 26%, 17%);
 
@@ -78,12 +132,12 @@ button{
     --dark-mode-elements: hsl(209, 23%, 22%);
     --white-mode-elements: hsl(0, 0%, 52%);
     
-  }
+  } */
 
 
 
 /*  Mobile Width */
-@media only screen and (max-width:376px){
+/* @media only screen and (max-width:376px){
   
     body {
         background-color: red;
@@ -92,18 +146,18 @@ button{
   }
 
 /*  Tablet Width */
-@media only screen and (min-width:376px) and (max-width:769px) {
+/* @media only screen and (min-width:376px) and (max-width:769px) {
   
     body {
         background-color: aqua;
         flex-direction: column;
     }
-  }
+  } */
 
 /*  Desktop Width */
-@media only screen and (min-width:1440px) {
+/* @media only screen and (min-width:1440px) {
   
     body {
         --background-light: hsl(0, 0%, 98%);
     }
-  }
+  } */

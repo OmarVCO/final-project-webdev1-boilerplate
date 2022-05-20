@@ -5,34 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest Countries</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
-    <nav>
-        <a href="/" class="nav__link" data-link>Home</a>
-        <a href="/countries" class="nav__link" data-link>Countries</a>
-    </nav>
-<div class="container">
-    <h1>Where in the world</h1>
-    <button class="toggle"><i class="far fa-moon"></i>Dark Side</button>
-</div>
-<div class="container">
-    <div class="form-control">
-        <input type="text" placeholder="Search">
-        <i class="fas fa-search"></i>
-    </div>
-    <div class="dropDownContainer">
-        <div class="dropDown">
-            <p>Filter by</p>
-            <button><i class="fas fa-chevron-down"></i></button>
-
+    <header>
+        <h1>Where in the world</h1>
+        <button class="toggle"><i class="far fa-moon"></i>Dark Side</button>
+    </header>
+    <section class="top-container">
+        <div class="form-control">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
         </div>
-    </div>
-</div>
+        <div class="dropDownContainer">
+            <div class="dropDown">
+                <p>Filter by</p>
+                <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="flag-list">
+            <div class="flag-individual">
+                <div class="flag">
+                    <img src="/frontend/static/images/mexico.png" alt="Mexico Flag" widht="100px" height="75px">
+                </div>
+                <div >
+                    <h2>Country name</h2>
+                </div>
+                <div class="data">
+                    <div><h3>Population:</h3></div>
+                    <div><p>text goes here</p></div>
+                </div>
+                <div class="data">
+                    <h3>Religion:</h3>
+                    <p>text goes here</p>
+                </div>
+                <div class="data" >
+                    <h3>Capital</h3>
+                    <p>text goes here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div class="container">
     <div id="app"></div>
     <script type="module" src="/static/js/countries.js"></script>
     <script type="module" src="/static/js/router.js"></script>
     <script type="module" src="/static/js/index.js"></script>
 </body>
 </html>
+
+    <!-- <nav>
+        <a href="/" class="nav__link" data-link>Home</a>
+        <a href="/countries" class="nav__link" data-link>Countries</a>
+    </nav> -->
