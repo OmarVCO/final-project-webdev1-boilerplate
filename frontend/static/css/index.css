@@ -2,12 +2,12 @@
 
 :root {
     --clr-primary-200: #ffffff;
-    --clr-primary-400: #ee941f;
-    --clr-primary-600: #585858;
+    --clr-primary-400: #494744;
+    --clr-primary-600: #797676;
 
     
     --clr-neutral-100: #fff;
-    --clr-neutral-900: #757575;
+    --clr-neutral-900: #464545;
   
     --ff-primary: "Roboto", sans-serif;
     --ff-accent: "Playfair Display", serif;
@@ -37,6 +37,8 @@ header{
     display: flex;
     padding: 15px;
     background-color: var(--clr-primary-400);
+    justify-content: space-between;
+    color: var(--clr-primary-200);
 }
 
 h3{
@@ -55,6 +57,13 @@ p{
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    background: var(--clr-primary-600);
+}
+
+.content-container{
+    background: var(--clr-primary-600);
+    width: 100%;
+    height: 100%;
 }
 
 .data {
@@ -63,11 +72,11 @@ p{
 }
 
 .flag-list{
-    background: var(--clr-neutral-100);
+    background: var(--clr-primary-600);
     padding:20px;
 }
 .flag{
-    background: red;
+    background: var(--clr-primary-600);
     padding: 2px;
 }
 
